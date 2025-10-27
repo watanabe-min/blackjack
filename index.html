@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>BlackJack</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="ui main container">
+    <div class="ui four column centered grid">
+        <div class="title">
+          <h1>BlackJack</h1>
+          <p>合計21を目指すゲームです。<br />
+            J,Q,Kは10として扱われ、Aは1あるいは11として自動で計算されます。21を超えると負けとなります。</p>
+        </div>
+      <div class="row board">
+        <div class="column">
+          <div class="ui segment bg-green">
+            <h2>自分の手札</h2>
+            <p id=my-total>合計：</p>
+            <ul id="my-cards"></ul>
+            <div id="my-image"></div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui segment bg-grey">
+            <h2>ディーラ(CPU)の手札</h2>
+            <p id=dealer-total>合計：？</p>
+            <ul id="dealer-cards"></ul>
+            <div id="dealer-image"></div>
+          </div>
+        </div>
+      </div>
+      <div id="button-list">
+        <button class="ui orange button mb-5px hit" onclick="getMyCard()"><i class="star outline icon"></i>もう一枚引く(ヒット)</button>
+        <button class="ui teal button" onclick="showResult()"><i class="diamond icon"></i>この手札で勝負する(スタンド)</button>
+      </div>
+      <div id="retry-button">
+      <button class="ui red button" onclick="location.reload()"><i class="undo icon"></i>リトライ</button>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

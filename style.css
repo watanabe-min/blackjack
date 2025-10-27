@@ -1,0 +1,149 @@
+html {
+    font-size: 80%;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+}
+
+h1:first-child {
+    font-size: 2rem;
+    font-family: 'arial';
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+img {
+    height: 80px;
+}
+
+.ui.grid {
+    margin: 0;
+}
+
+.ui.button.mb-5px {
+    margin-bottom: 5px;
+}
+
+.undo.icon {
+    transform: rotate( -75deg);
+}
+
+#retry-button {
+    display: none;
+}
+
+.title {
+    width: 80%;
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.title > p {
+    line-height: 1.5;
+    color: #666;
+}
+
+@media (max-width: 430px) {
+    .ui.centered.grid>.row>.column {
+        width: 95%;
+        margin-top: 5px;
+    }
+    .ui.centered.grid>.row {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    h1:first-child {
+        font-size: 1.6rem;
+        line-height: 1.4rem;
+    }
+    .title {
+        width: 95%;
+    }
+    h2 {
+        font-size: 1.1rem;
+        line-height: 1.1rem;
+    }
+    p {
+        font-size: 0.9rem;
+        line-height: 0.9rem;
+    }
+    img {
+        height: 70px;
+    }
+    .ui.button.hit {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 431px) and (max-width:830px) {
+    .ui.centered.grid>.row>.column {
+        width: 80%;
+        margin-top: 10px;
+    }
+    .ui.centered.grid>.row {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .ui.centered.grid>.row {
+        margin-top: -10px;
+    }
+    h1:first-child {
+        font-size: 1.6rem;
+        line-height: 0.4rem;
+    }
+    .title {
+        width: 95%;
+    }
+    h2 {
+        font-size: 1.1rem;
+        line-height: 1.1rem;
+    }
+    p {
+        font-size: 0.9rem;
+        line-height: 0.9rem;
+    }
+    img {
+        height: 70px;
+    }
+}
+
+@media screen and (min-width: 831px)  {
+    .ui.centered.grid>.row>.column {
+        width: 40%;
+        max-width: 360px;
+        padding: 0; 
+    }
+    .ui.centered.grid>.row>.column:first-child {
+        padding-right: 1rem; 
+    }
+
+    #button-list {
+        width: 50%;
+        padding-left: calc(50% - 360px);
+    }
+}
+
+.ui.segment.bg-green {
+    background-color: #009966;
+}
+
+.ui.segment.bg-grey {
+    background-color: #888888;
+}
