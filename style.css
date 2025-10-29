@@ -41,6 +41,25 @@ img {
     transform: rotate( -75deg);
 }
 
+/* カード画像を表示 */
+#my-image, #dealer-image {
+  display: flex;
+  gap: 4px;
+  justify-content: left;
+  align-items: flex-start;
+  min-height: 84px;
+}
+
+#my-image img, #dealer-image img {
+  height: 80px;
+  object-fit: contain; /* 画像比率を保つ */
+  background-color: #eee; /* 読み込み中 */
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
 #retry-button {
     display: none;
 }
@@ -109,7 +128,7 @@ img {
         line-height: 0.4rem;
     }
     .title {
-        width: 95%;
+        width: 80%;
     }
     h2 {
         font-size: 1.1rem;
